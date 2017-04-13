@@ -855,6 +855,7 @@
 
       xhr.open('get', url);
       xhr.responseType = 'arraybuffer';
+      xhr.withCredentials = true;
       xhr.send();
     },
 
@@ -3403,7 +3404,7 @@
     restore: true,
 
     // Check if the current image is a cross-origin image
-    checkCrossOrigin: true,
+    checkCrossOrigin: false,
 
     // Check the current image's Exif Orientation information
     checkOrientation: true,
