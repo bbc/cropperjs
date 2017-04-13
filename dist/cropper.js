@@ -1,11 +1,11 @@
 /*!
- * Cropper.js v0.7.0
+ * Cropper.js v@VERSION
  * https://github.com/fengyuanchen/cropperjs
  *
- * Copyright (c) 2015-2016 Fengyuan Chen
+ * Copyright (c) 2015-@YEAR Fengyuan Chen
  * Released under the MIT license
  *
- * Date: 2016-03-20T06:15:36.234Z
+ * Date: @DATE
  */
 
 (function (global, factory) {
@@ -855,6 +855,7 @@
 
       xhr.open('get', url);
       xhr.responseType = 'arraybuffer';
+      xhr.withCredentials = true;
       xhr.send();
     },
 
@@ -3403,7 +3404,7 @@
     restore: true,
 
     // Check if the current image is a cross-origin image
-    checkCrossOrigin: true,
+    checkCrossOrigin: false,
 
     // Check the current image's Exif Orientation information
     checkOrientation: true,

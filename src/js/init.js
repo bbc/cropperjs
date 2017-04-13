@@ -77,6 +77,7 @@
 
       xhr.open('get', url);
       xhr.responseType = 'arraybuffer';
+      xhr.withCredentials = true;
       xhr.send();
     },
 
